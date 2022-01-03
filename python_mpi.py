@@ -54,7 +54,7 @@ if rank ==0:
 	t = end - start
 	print(f'Time: {t}')
 	if TEST:
-		if c.all() == c_test.all():
+		if (c==c_test).all():
 			print("Correct answer!\n")
 		else:
 			print("Wrong answer!\n")
